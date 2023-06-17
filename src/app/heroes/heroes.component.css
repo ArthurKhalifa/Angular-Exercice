@@ -8,7 +8,18 @@
   margin: 0 0 2em 0;
   list-style-type: none;
   padding: 0;
- 
+  background-color: #E6E6E6;
+  border-top: 2px solid #b45c29;
+  border-bottom: 2px solid #b45c29;
+  border-radius: 15px;
+}
+
+.heroes ul {
+  background-color: black;
+}
+
+#new-hero{
+width: 100%;
 }
 
 input {
@@ -17,6 +28,10 @@ input {
   padding: .5rem;
   margin: 1rem 0;
   box-sizing: border-box;
+}
+
+.all{
+  width: 50vw;
 }
 
 .heroes li {
@@ -50,12 +65,19 @@ input {
   color: #fafafa;
 }
 
+.badge {
+
+  color: white;
+  background-color: red;
+}
+
 .heroes .badge {
+
   display: inline-block;
   font-size: small;
   color: white;
   padding: 0.8em 0.7em 0 0.7em;
-  background-color: #405061;
+  background-color: #b45c29;
   line-height: 1em;
   position: relative;
   left: -1px;
