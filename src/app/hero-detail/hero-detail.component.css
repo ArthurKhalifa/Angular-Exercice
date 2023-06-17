@@ -1,0 +1,55 @@
+/* HeroDetailComponent's private CSS styles */
+label {
+  color: #b45c29;
+  font-weight: bold;
+}
+
+input {
+  font-size: 1em;
+  padding: .5rem;
+}
+
+span {
+  color: white;
+}
+
+.here{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 10px;
+}
+
+.ppw {
+  color: red;
+  font-weight: bold;
+}
+
+h2 {
+  color: #b45c29;
+}
+
+button {
+  text-transform: uppercase;
+  font-weight: bold;
+  background-color: black;
+  border-top: 2px solid #b45c29;
+  border-bottom: 2px solid #b45c29;
+  border-radius: 15px;
+  color: #efeff1;
+  margin-top: 20px;
+  margin-right: .5rem;
+  padding: 1rem;
+  font-size: 1rem;
+}
+
+button:hover {
+  background-color: #363636;
+  color: white;
+}
+
+button:disabled {
+  background-color: #eee;
+  color: #ccc;
+  cursor: auto;
+}

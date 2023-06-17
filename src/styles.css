@@ -1,1 +1,144 @@
-/* You can add global styles to this file, and also import other style files */
+* {
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+h1 {
+  color: #dfdfdf;
+  font-size: 2.5rem;
+}
+
+.ppw{
+  color:white;
+}
+
+span{
+  color: white;
+}
+
+p{
+  color: #ffffff;
+}
+
+h2,
+h3 {
+  color: #ffffff;
+  font-weight: lighter;
+}
+
+h3 {
+  color: #ffffff;
+  font-size: 1.3rem;
+}
+
+body {
+  padding: .5rem;
+  max-width: 1000px;
+  height: 100;
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  overflow-x: hidden;
+  color: white;
+
+}
+
+html {
+  background-color: black;
+  width: 100%;
+  height: 100%;
+  overflow-x: hidden;
+  
+}
+
+@media (min-width: 600px) {
+  body {
+    width: 100vw;
+    padding: 4rem;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    overflow-x: hidden;
+  }
+
+  html {
+    width: 100vw;
+    overflow-x: hidden;
+  }
+
+  a {
+    width: 18%;
+    box-sizing: content-box;
+    background-color: red;
+  }
+}
+
+body,
+input[text] {
+  color: #333;
+  font-family: Cambria, Georgia, serif;
+  color: #ffffff;
+}
+
+a {
+  cursor: pointer;
+}
+
+button {
+  background-color: #eee;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  color: black;
+  font-size: 1.2rem;
+  padding: 1rem;
+  margin-right: 1rem;
+  margin-bottom: 1rem;
+  margin-top: 1rem;
+}
+
+button:hover {
+  background-color: black;
+  color: white;
+}
+
+button:disabled {
+  background-color: #eee;
+  color: #aaa;
+  cursor: auto;
+}
+
+/* Navigation link styles */
+nav a {
+  padding: 5px 10px;
+  text-decoration: none;
+  margin-right: 10px;
+  margin-top: 10px;
+  display: inline-block;
+  background-color: #e8e8e8;
+  color: #3d3d3d;
+  border-radius: 4px;
+}
+
+nav a:hover {
+  color: white;
+  background-color: #42545C;
+}
+
+nav a.active {
+  background-color: black;
+  color: white;
+}
+
+hr {
+  margin: 1.5rem 0;
+}
+
+input[type="text"] {
+  box-sizing: border-box;
+  width: 100%;
+  padding: .5rem;
+  color: #ffffff;
+}

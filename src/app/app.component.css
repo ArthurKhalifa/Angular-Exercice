@@ -1,0 +1,36 @@
+/* AppComponent's private CSS styles */
+h1 {
+    margin-bottom: 0;
+    color: #b45c29;
+    font-size: 48px;
+}
+nav{
+    width: 100%;
+    text-align: center;
+}
+nav a {
+    padding: 1rem;
+    text-decoration: none;
+    margin-top: 10px;
+    display: inline-block;
+    text-transform: uppercase;
+    font-weight: bold;
+    background-color: black;
+    border-top: 2px solid #b45c29;
+    border-bottom: 2px solid #b45c29;
+    border-radius: 15px;
+    color: #efeff1;
+}
+
+#title{
+   width: 60px;
+}
+
+nav a:hover {
+    color: white;
+    background-color: #303030;
+}
+
+nav a.active {
+    background-color: #303030;
+}
