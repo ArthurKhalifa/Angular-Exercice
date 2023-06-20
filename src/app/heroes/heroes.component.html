@@ -1,21 +1,28 @@
-<h2>Heróis</h2>
+<div class="hero">
+  <div class="condi">
+    <h2>Heróis</h2>
 
-<div>
-  <div>
-    <label for="new-hero">Nome do Herói: </label>
-    <input id="new-hero" #heroName />
+    <div>
+      <div>
+        <label for="new-hero">Nome do Herói: </label>
+        <input id="new-hero" #heroName placeholder="Crie um novo herói"/>
+      </div>
+      <!-- (click) passes input value to add() and then clears the input -->
+      <button type="button" class="add-button" (click)="add(heroName.value); heroName.value=''">
+        Adicionar herói
+      </button>
+    </div>
+    <div class="list">
+      <ul class="heroes">
+        <li *ngFor="let hero of heroes">
+          <a routerLink="/detail/{{hero.id}}">
+            <span class="badge">{{hero.id}}</span> {{hero.name}}
+          </a>
+          <button type="button" class="delete" title="delete hero" (click)="delete(hero)">x</button>
+        </li>
+      </ul>
+    </div>
   </div>
-  <!-- (click) passes input value to add() and then clears the input -->
-  <button type="button" class="add-button" (click)="add(heroName.value); heroName.value=''">
-    Adicionar herói
-  </button>
-</div>
 
-<ul class="heroes">
-  <li *ngFor="let hero of heroes">
-    <a routerLink="/detail/{{hero.id}}">
-      <span class="badge">{{hero.id}}</span> {{hero.name}}
-    </a>
-    <button type="button" class="delete" title="delete hero" (click)="delete(hero)">x</button>
-  </li>
-</ul>
+
+</div>

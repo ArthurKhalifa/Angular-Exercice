@@ -1,25 +1,49 @@
 /* HeroesComponent's private CSS styles */
-.heroes {
+
+
+.hero {
   width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  padding-right: 46px;
+  
+}
+
+.condi{
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 13px 27px -5px, rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;
+  border-radius: 5px;
+}
+
+.heroes {
+  width: 250px;
   display: flex;
   flex-direction: column;
   align-items: start;
   justify-content: start;
-  margin: 0 0 2em 0;
+
   list-style-type: none;
   padding: 0;
   background-color: #E6E6E6;
   border-top: 2px solid #b45c29;
   border-bottom: 2px solid #b45c29;
-  border-radius: 15px;
+  border-radius: 5px;
 }
+
+
 
 .heroes ul {
   background-color: black;
 }
 
-#new-hero{
-width: 100%;
+#new-hero {
+  width: 200px;
 }
 
 input {
@@ -30,7 +54,7 @@ input {
   box-sizing: border-box;
 }
 
-.all{
+.all {
   width: 50vw;
 }
 
@@ -50,7 +74,7 @@ input {
   margin: .5em;
   padding: .3em 0;
   height: 1.6em;
-  border-radius: 4px;
+  border-radius: 5px;
   display: block;
   width: 100%;
 }
@@ -91,19 +115,17 @@ input {
 
 .add-button {
   background-color: black;
-  border-top: 2px solid #b45c29;
-  border-bottom: 2px solid #b45c29;
-  border-radius: 15px;
+  border: 2px solid #b45c29;
+  border-radius: 5px;
   color: #efeff1;
-  border-radius: 35px;
   padding: .5rem 1.5rem;
   font-size: 1rem;
   margin-bottom: 2rem;
 }
 
 .add-button:hover {
-  color: white;
-  background-color: #303030;
+  color: #b45c29;
+  transform: scale(1.1);
 }
 
 button.delete {

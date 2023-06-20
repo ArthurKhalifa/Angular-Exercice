@@ -7,15 +7,15 @@ h1 {
   font-size: 2.5rem;
 }
 
-.ppw{
-  color:white;
-}
-
-span{
+.ppw {
   color: white;
 }
 
-p{
+span {
+  color: white;
+}
+
+p {
   color: #ffffff;
 }
 
@@ -31,10 +31,8 @@ h3 {
 }
 
 body {
-  padding: .5rem;
-  max-width: 1000px;
-  height: 100;
-  margin: auto;
+  width: 100%;
+  height: 100%;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -42,38 +40,28 @@ body {
   text-align: center;
   overflow-x: hidden;
   color: white;
-
 }
 
 html {
-  background-color: rgb(22, 22, 22);
+  background-color: #303030;
   width: 100%;
   height: 100%;
-  overflow-x: hidden;
-  
+  transition: all 0.5s ease-in-out;
+ background-color: #222;
 }
 
-@media (min-width: 600px) {
-  body {
-    width: 100vw;
-    padding: 4rem;
-    align-items: center;
-    justify-content: center;
-    text-align: center;
-    overflow-x: hidden;
-  }
+app-root {
+  width: 800px;
+  margin-top: 20px;
+  height: 100vh;
+  padding-right: 10px;
+  /* border-left: 2px solid red;
+  border-right: 2px solid red; */
+  border-radius: 15px;
 
-  html {
-    width: 100vw;
-    overflow-x: hidden;
-  }
-
-  a {
-    width: 18%;
-    box-sizing: content-box;
-    background-color: red;
-  }
 }
+
+
 
 body,
 input[text] {
@@ -141,4 +129,32 @@ input[type="text"] {
   width: 100%;
   padding: .5rem;
   color: #ffffff;
+}
+
+@media (min-width: 600px) {
+  body {
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    overflow-x: hidden;
+  }
+
+  html {
+    width: 100%;
+    overflow-x: hidden;
+  }
+
+  a {
+    width: 18%;
+    box-sizing: content-box;
+    background-color: red;
+  }
+}
+
+@media (max-width: 900px) {
+  app-root {
+    width: 90%;
+    margin-right: 10px;
+  }
 }

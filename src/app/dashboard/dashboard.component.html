@@ -1,9 +1,11 @@
-<h2>Heróis mais buscados</h2>
-<div class="heroes-menu">
-  <a *ngFor="let hero of heroes"
-      routerLink="/detail/{{hero.id}}">
+<div class="dash">
+  <h2>Heróis mais buscados</h2>
+  <div class="heroes-menu">
+    <a *ngFor="let hero of heroes" routerLink="/detail/{{hero.id}}" id="hero-size">
       {{hero.name}}
-  </a>
+    </a>
+  </div>
 </div>
+
 
 <app-hero-search></app-hero-search>

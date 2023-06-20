@@ -1,4 +1,8 @@
 /* MessagesComponent's private CSS styles */
+.msg{
+  width: 100%;
+}
+
 h2 {
   color: white;
   font-family: Arial, Helvetica, sans-serif;
@@ -7,9 +11,8 @@ h2 {
 
 .clear {
   background-color: black;
-  border-top: 2px solid #b45c29;
-  border-bottom: 2px solid #b45c29;
-  border-radius: 15px;
+  border: 2px solid #b45c29;
+  border-radius: 5px;
   color: #efeff1;
   margin-bottom: 12px;
   padding: 1rem;
@@ -17,6 +20,6 @@ h2 {
 }
 
 .clear:hover {
-  color: #fff;
-  background-color: #303030;
+  color: #b45c29;
+  transform: scale(1.1);
 }

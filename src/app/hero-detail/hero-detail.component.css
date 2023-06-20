@@ -13,7 +13,7 @@ span {
   color: white;
 }
 
-.here{
+.here {
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -27,25 +27,38 @@ span {
 
 h2 {
   color: #b45c29;
-}
-
-button {
-  text-transform: uppercase;
   font-weight: bold;
-  background-color: black;
-  border-top: 2px solid #b45c29;
-  border-bottom: 2px solid #b45c29;
-  border-radius: 15px;
-  color: #efeff1;
-  margin-top: 20px;
-  margin-right: .5rem;
-  padding: 1rem;
-  font-size: 1rem;
 }
 
-button:hover {
-  background-color: #363636;
+.deta{
+  font-size: 20px;
+}
+ 
+.show{
+  margin: 0;
+  margin-top: 7px;
+  display: none;
+}
+.here:hover{
+  .show{
+    display: flex;
+  }
+}
+
+.btnS {
+  width: 120px;
+  background-color: black;
+  border: 2px solid #b45c29;
   color: white;
+  border-radius: 5px;
+  padding: 0;
+  padding: 3px ;
+}
+
+.btnS:hover {
+  background-color: black;
+  color: #b45c29;
+  transform: scale(1.1);
 }
 
 button:disabled {

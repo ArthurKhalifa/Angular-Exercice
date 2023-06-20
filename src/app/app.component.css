@@ -2,33 +2,35 @@
 h1 {
     margin-bottom: 0;
     color: #b45c29;
+    text-shadow: #030202 20px 0.1px;
     font-size: 48px;
 }
-nav{
+
+nav {
     width: 100%;
     text-align: center;
 }
+
 nav a {
-    padding: 1rem;
     text-decoration: none;
-    margin-top: 10px;
     display: inline-block;
     text-transform: uppercase;
     font-weight: bold;
+}
+ 
+
+/**/
+#title {
+    width: 100px;
     background-color: black;
-    border-top: 2px solid #b45c29;
-    border-bottom: 2px solid #b45c29;
-    border-radius: 15px;
-    color: #efeff1;
-}
-
-#title{
-   width: 60px;
-}
-
-nav a:hover {
+    border: 2px solid #b45c29;
     color: white;
-    background-color: #303030;
+   border-radius: 5px;
+}
+
+#title:hover {
+    color: #b45c29;
+    transform: scale(1.1);
 }
 
 nav a.active {

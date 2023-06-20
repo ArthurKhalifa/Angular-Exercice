@@ -4,30 +4,30 @@ h2 {
   text-align: center;
 }
 
+.dash {
+  width: 100%;
+}
+
 .heroes-menu {
   padding: 0;
   margin: auto;
-  width: 1000px;
+  width: 40%;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  align-items: center;
+  justify-content: center;
+ 
+}
 
-  /* flexbox */
-  display: -webkit-box;
-  display: -moz-box;
-  display: -ms-flexbox;
-  display: -webkit-flex;
-  display: flex;
-  flex-direction: row;
-  flex-wrap: wrap;
-  justify-content: space-around;
-  align-content: flex-start;
-  align-items: flex-start;
-  text-align: center;
+#hero-size {
+  width: 190px;
+  margin-left: 20px;
 }
 
 a {
   background-color: black;
-  border-top: 2px solid #b45c29;
-  border-bottom: 2px solid #b45c29;
-  border-radius: 15px;
+  border: 2px solid #b45c29;
+  border-radius: 5px;
   color: #efeff1;
   padding: 1rem;
   font-size: 1.2rem;
@@ -38,8 +38,6 @@ a {
   min-width: 70px;
   margin: .5rem auto;
   box-sizing: border-box;
-
-  /* flexbox */
   order: 0;
   flex: 0 1 auto;
   align-self: auto;
@@ -52,6 +50,20 @@ a {
   }
 }
 
+@media (max-width: 1100px) {
+  .heroes-menu {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+  }
+
+  #hero-size {
+    width: 90%;
+  }
+}
+
 a:hover {
-  background-color: rgb(48, 48, 48);
+  color: #b45c29;
+  transform: scale(1.1);
+  transition: 0.2s;
 }
